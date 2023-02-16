@@ -14,4 +14,5 @@ export const defaultPageTheme = {
     bgHoverTransitionTimingFunction: 'ease-in-out',
     bgHoverBoxShadow: '0 8px 15px rgb(0 0 0 / 20%)',
     offWhite: '#f6f6f6',
+    backgroundColor: '#fff',
 };

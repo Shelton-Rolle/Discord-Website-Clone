@@ -1,13 +1,23 @@
 import { ContentSectionsContainer as Section } from '../styled-components/ContentSections';
 import { ContentSection } from '../components/ContentSection';
-
+import { BsDownload } from 'react-icons/bs';
+import { HeadingButtonLink } from '../styled-components/HeadingButtonLink';
 import { ReactComponent as StudyGroup } from '../images/study-group.svg';
 import { ReactComponent as JustChillin } from '../images/just-chillin.svg';
 import { ReactComponent as Coach } from '../images/coach.svg';
 import { ReactComponent as VideoCall } from '../images/video-call.svg';
 import { ReactComponent as Stars } from '../images/stars.svg';
+import { ThemeProvider } from 'styled-components';
+import { defaultPageTheme } from '../styled-components/themes/defaultPageTheme';
+import { ContentContainer } from '../styled-components/ContentContainer';
 
 export const ContentSections = () => {
+    const theme = {
+        ...defaultPageTheme,
+        notQuiteBlack: 'white',
+        brandBlue: 'white',
+        backgroundColor: defaultPageTheme.brandBlue,
+    };
     return (
         <Section>
             <ContentSection
@@ -69,18 +79,21 @@ export const ContentSections = () => {
                     </div>
                 }
             />
-            <ContentSection
-                sectionImage={<Stars />}
-                backgroundColor="#f6f6f6"
-                contentFlow="vertical"
-                typographicAlignment="reverse"
-                sectionContent={
-                    <div className="sectionContent">
-                        <h2>Test</h2>
-                        <p>Test content</p>
+            <div id="call-to-action">
+                <ContentContainer>
+                    <div id="cta-text">
+                        <Stars />
+                        <h2>Ready to start your journey?</h2>
                     </div>
-                }
-            />
+                    <div id="cta-link">
+                        <ThemeProvider theme={theme}>
+                            <HeadingButtonLink href="/">
+                                <BsDownload /> Download for Mac
+                            </HeadingButtonLink>
+                        </ThemeProvider>
+                    </div>
+                </ContentContainer>
+            </div>
         </Section>
     );
 };
