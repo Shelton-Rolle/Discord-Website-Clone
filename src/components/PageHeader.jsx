@@ -1,5 +1,6 @@
 import { PageHeader as Container } from '../styled-components/PageHeader';
 import { ReactComponent as DiscordLogo } from '../images/logo.svg';
+import { HeadingButtonLink } from '../styled-components/HeadingButtonLink';
 
 export const PageHeader = () => {
     return (
@@ -31,7 +32,7 @@ export const PageHeader = () => {
                 </li>
             </ul>
             <div>
-                <a href="/">Login</a>
+                <HeadingButtonLink href="/">Login</HeadingButtonLink>
             </div>
         </Container>
     );
