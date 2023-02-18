@@ -2,6 +2,7 @@ import { ThemeProvider } from 'styled-components';
 import HeadingSection from './sections/HeadingSection';
 import { ContentSections } from './sections/ContentSections';
 import { defaultPageTheme } from './styled-components/themes/defaultPageTheme';
+import Footer from './sections/Footer';
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
             <div>
                 <HeadingSection />
                 <ContentSections />
+                <Footer />
             </div>
         </ThemeProvider>
     );

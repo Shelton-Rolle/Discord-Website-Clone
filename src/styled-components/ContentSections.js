@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const ContentSectionsContainer = styled.section`
     #call-to-action {
+        background: ${(props) => props.theme.offWhite};
         font-family: ${(props) => props.theme.oxygenFont};
+        padding-bottom: 120px;
 
         #cta-text {
             display: flex;
