@@ -19,3 +19,7 @@ For tomorrow, I plan on finishing the Content section and starting and completin
 # Day 2 Recap - 02/16/2023
 
 Today I styled another portion of the content sections, however, I didn’t complete it because I wasn’t too interested in working on the vertical sections. So instead, I started work on the footer. I gathered all the flag images needed for the drop down and started working on a plan for how I am going to tackle the footer. For the dropdown, I wasn’t able to just plop the images with the text in a select, so I am going to look into making a custom dropdown component to hopefully have more control over its styling and functionality. This should let me get it looking and working closer to the original.
+
+# Day 3 Recap - 02/17/2023
+
+Today I completed the Footer component. I created the custom dropdown menu like I wanted, which was surprisingly easier than expected. Once that was created, it was pretty simple adding in the rest of the content. So far, the page isn’t an exact match, due to different fonts, however, it’s close enough where I’m happy with what I’m producing. The plan for tomorrow is to finally tackle the Vertical Section component and once thats done that’ll be a wrap on this project.
