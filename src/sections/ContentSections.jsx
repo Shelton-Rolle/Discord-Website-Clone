@@ -22,7 +22,6 @@ export const ContentSections = () => {
         <Section>
             <ContentSection
                 sectionImage={<StudyGroup />}
-                contentFlow="horizontal"
                 typographicAlignment="normal"
                 sectionContent={
                     <div className="sectionContent">
@@ -39,7 +38,6 @@ export const ContentSections = () => {
             <ContentSection
                 sectionImage={<JustChillin />}
                 backgroundColor="#f6f6f6"
-                contentFlow="horizontal"
                 typographicAlignment="reverse"
                 sectionContent={
                     <div className="sectionContent">
@@ -54,7 +52,6 @@ export const ContentSections = () => {
             />
             <ContentSection
                 sectionImage={<Coach />}
-                contentFlow="horizontal"
                 typographicAlignment="normal"
                 sectionContent={
                     <div className="sectionContent">
@@ -67,18 +64,20 @@ export const ContentSections = () => {
                     </div>
                 }
             />
-            <ContentSection
-                sectionImage={<VideoCall />}
-                backgroundColor="#f6f6f6"
-                contentFlow="vertical"
-                typographicAlignment="normal"
-                sectionContent={
-                    <div className="sectionContent">
-                        <h2>Test</h2>
-                        <p>Test content</p>
+            <div id="video-call">
+                <ContentContainer id="container">
+                    <div id="description">
+                        <h2>Reliable Tech for Staying Close</h2>
+                        <p>
+                            Low-latency voice and video feels like you’re in the
+                            same room. Wave hello over video, watch friends
+                            stream their games, or gather up and have a drawing
+                            session with screen share.
+                        </p>
                     </div>
-                }
-            />
+                    <VideoCall />
+                </ContentContainer>
+            </div>
             <div id="call-to-action">
                 <ContentContainer>
                     <div id="cta-text">
