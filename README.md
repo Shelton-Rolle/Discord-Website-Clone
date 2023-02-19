@@ -1,14 +1,9 @@
--   Page Header
-    Starting by creating the Heading section of the page. This section includes the following:
-    -   Logo&Name
-    -   Nav Bar
-    -   Login Button
--   Content
-    -   Heading
-    -   SubHeading
-    -   Download Button
-    -   Open In Browser Link
--   SVG Images
+# Table Of Contents
+
+-   Daily Recaps
+-   What would I add?
+-   What I learned
+-   Technologies
 
 # Day 1 Recap - 02/15/2023
 
@@ -23,3 +18,21 @@ Today I styled another portion of the content sections, however, I didn’t comp
 # Day 3 Recap - 02/17/2023
 
 Today I completed the Footer component. I created the custom dropdown menu like I wanted, which was surprisingly easier than expected. Once that was created, it was pretty simple adding in the rest of the content. So far, the page isn’t an exact match, due to different fonts, however, it’s close enough where I’m happy with what I’m producing. The plan for tomorrow is to finally tackle the Vertical Section component and once thats done that’ll be a wrap on this project.
+
+# Day 4 Recap - 02/17/2023
+
+Today I finished up the last vertical section in the ContentSection which wrapped up what I had planned to complete when starting this project. All in all, it's not a perfect replication, due to some different fonts and trouble with the video call svg that I didn't understand, however, I'm happy with how it turned out.
+
+# What would I add
+
+I only planned to re-create the desktop view of this website, however, if I had some more time I think I would've liked trying to add responsiveness to this project. If possible, I also would've liked to have all the same fonts that the actual website used to get a much closer re-creation.
+
+# What I learned
+
+I learned a lot more about the "styled-components" library such as its themes and nesting as well as inheriting from other styled components. I am still new to it but I definitely know more now than I did before starting this project. I also realized how many different options there are when it comes to organizing your file system. I actual spent a good amount of time trying to decide how I wanted to organize all my components and styled components, and although I'm not mad at what I decided on, even after making my decisions I was realizing new and better ways I could've organized this project.
+
+# Technologies Used
+
+-   ReactJS
+-   React Ions
+-   Styled Components
