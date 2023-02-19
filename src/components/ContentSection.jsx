@@ -1,6 +1,4 @@
-import { NormalVerticalSection } from '../styled-components/NormalVerticalSection';
 import { NormalHorizontalSection } from '../styled-components/NormalHorizontalSection';
-import { ReverseVerticalSection } from '../styled-components/ReverseVerticalSection';
 import { ReverseHorizontalSection } from '../styled-components/ReverseHorizontalSection';
 import { ThemeProvider } from 'styled-components';
 import { defaultPageTheme } from '../styled-components/themes/defaultPageTheme';
@@ -8,7 +6,6 @@ import { SectionContentContainer } from '../styled-components/SectionContentCont
 export const ContentSection = ({
     sectionImage,
     backgroundColor,
-    contentFlow,
     typographicAlignment,
     sectionContent,
 }) => {
@@ -17,83 +14,34 @@ export const ContentSection = ({
         backgroundColor: !backgroundColor ? '#fff' : backgroundColor,
     };
 
-    // Content Flow Possible Values - vertical || horizontal
-    // Typographic Alignment Possible Values - normal || reverse
-
-    const VerticalSection = () => {
-        const Normal = () => {
-            return (
-                <NormalVerticalSection>
-                    <SectionContentContainer>
-                        {sectionImage}
-                        {sectionContent}
-                    </SectionContentContainer>
-                </NormalVerticalSection>
-            );
-        };
-        const Reverse = () => {
-            return (
-                <ReverseVerticalSection>
-                    <SectionContentContainer>
-                        {sectionContent}
-                        {sectionImage}
-                    </SectionContentContainer>
-                </ReverseVerticalSection>
-            );
-        };
+    const Normal = () => {
         return (
-            <>
-                {typographicAlignment === 'normal' ? (
-                    <Normal />
-                ) : typographicAlignment === 'reverse' ? (
-                    <Reverse />
-                ) : (
-                    <></>
-                )}
-            </>
+            <NormalHorizontalSection>
+                <SectionContentContainer>
+                    {sectionImage}
+                    {sectionContent}
+                </SectionContentContainer>
+            </NormalHorizontalSection>
         );
     };
 
-    const HorizontalSection = () => {
-        const Normal = () => {
-            return (
-                <NormalHorizontalSection>
-                    <SectionContentContainer>
-                        {sectionImage}
-                        {sectionContent}
-                    </SectionContentContainer>
-                </NormalHorizontalSection>
-            );
-        };
-        const Reverse = () => {
-            return (
-                <ReverseHorizontalSection>
-                    <SectionContentContainer>
-                        {sectionContent}
-                        {sectionImage}
-                    </SectionContentContainer>
-                </ReverseHorizontalSection>
-            );
-        };
+    const Reverse = () => {
         return (
-            <>
-                {typographicAlignment === 'normal' ? (
-                    <Normal />
-                ) : typographicAlignment === 'reverse' ? (
-                    <Reverse />
-                ) : (
-                    <></>
-                )}
-            </>
+            <ReverseHorizontalSection>
+                <SectionContentContainer>
+                    {sectionContent}
+                    {sectionImage}
+                </SectionContentContainer>
+            </ReverseHorizontalSection>
         );
     };
 
     return (
         <ThemeProvider theme={theme}>
-            {contentFlow === 'vertical' ? (
-                <VerticalSection />
-            ) : contentFlow === 'horizontal' ? (
-                <HorizontalSection />
+            {typographicAlignment === 'normal' ? (
+                <Normal />
+            ) : typographicAlignment === 'reverse' ? (
+                <Reverse />
             ) : (
                 <></>
             )}
