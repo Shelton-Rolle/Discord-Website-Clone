@@ -1,3 +1,5 @@
+### Warning: Chrome treats the live version of this website as dangerous, however, I haven't gotten that problem on other browsers. Currently I'm not sure what this means but it will be looked into for future projects.
+
 # Table Of Contents
 
 -   Daily Recaps
